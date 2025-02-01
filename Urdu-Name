@@ -1,0 +1,164 @@
+import turtle
+t = turtle.Turtle()
+t.fillcolor("black")
+L = 10
+
+
+t.speed(0)
+t.penup()
+t.setpos(200, 0)
+t.pendown()
+
+def sq(a):
+    t.pendown()
+
+    t.begin_fill()
+
+    for _ in range(4):
+
+        t.forward(a)
+
+        t.right(90)
+    t.end_fill()
+def daal():
+  t.pendown()
+  
+  t.setheading(180)
+  t.forward(4*L)
+  t.setheading(0) 
+  t.forward(2*L)
+  t.setheading(90)
+  t.forward(3*L/2)
+  
+def haa():
+  t.pendown()
+  
+  t.setheading(180)
+  t.forward(2*L)
+  t.left(135)
+  t.forward(L*1.4)
+  t.right(135)
+  t.forward(2*L)
+  
+def joined_alif():
+  t.setheading(90)
+  t.circle(3*L/2, -180)
+  t.setheading(90)
+  t.forward(3*L)
+
+
+t.setheading(90)
+
+#Mohammad
+sq(L)
+haa()
+
+t.setheading(-90)
+
+sq(L)
+daal()
+
+###
+t.penup()
+t.setheading(-90)
+t.forward(L/2)
+t.setheading(180)
+t.forward(5*L)
+###
+
+#Quayim
+##qaa
+sq(L)
+joined_alif()
+t.penup()
+t.right(90)
+t.forward(20L)
+t.right(90)
+t.forward(10L)
+t.setheading(0)
+sq(L/3)
+t.penup()
+t.forward(5L)
+sq(L/3)
+##
+
+t.penup()
+t.setpos(5*L, 5*L/2)
+t.pendown()
+
+t.right(90)
+t.forward(L)
+t.right(90)
+t.forward(3*L/2)
+t.right(-90)
+sq(L)
+t.left(-90)
+t.forward(5*L/2)
+t.left(90)
+t.forward(7*L/2)
+
+t.penup()
+t.setpos(4*L, L)
+t.setheading(0)
+sq(L/3)
+t.penup()
+t.forward(5L)
+sq(L/3)
+###
+t.penup()
+t.setpos(-L, L/2)
+t.pendown()
+t.setheading(180)
+###
+
+#Qadri
+
+##qaa
+sq(L)
+joined_alif()
+t.penup()
+t.right(90)
+t.forward(20L)
+t.right(90)
+t.forward(10L)
+t.setheading(0)
+sq(L/3)
+t.penup()
+t.forward(5L)
+sq(L/3)
+##
+t.penup()
+t.setpos(-7*L, -L/2)
+t.pendown()
+##
+t.setheading(0) 
+t.forward(2*L)
+t.setheading(90)
+t.forward(3*L/2)
+t.setheading(180) 
+t.forward(2*L)
+
+
+t.penup()
+t.setpos(-10*L, -L/2)
+t.pendown()
+
+t.setheading(0) 
+t.forward(2*L)
+t.setheading(90)
+t.forward(3*L/2)
+
+##
+t.penup()
+t.setpos(-11*L, 3*L)
+t.pendown()
+##
+
+t.setheading(-180)
+t.circle(7*L/10, 180)
+t.setheading(180)
+t.circle((7*L/10), -100)
+t.setheading(100)
+t.circle(7*L/10, -100)
+t.setheading(30)
+t.circle(12*L/10, -90)
