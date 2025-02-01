@@ -27,12 +27,13 @@ def koch_snowflake( order, length):
 
 t.speed(0)
 t.penup()
-t.goto(-150, 100)  # Move to a starting position
+t.goto(-150, 100) 
 t.pendown()
 t.begin_fill()
-koch_snowflake( 4, 300)  # Calling the function
+koch_snowflake( 4, 300)  
 t.end_fill()
 
+##I was trying to draw different patterns with the code.
 '''t.right(30)
 t.color("white")
 #347
@@ -40,4 +41,4 @@ koch_curve(4, 347)
 t.left(180)
 koch_curve(4, 347)
 '''
-turtle.mainloop()
+turtle.mainloop() #For Pycharm.
