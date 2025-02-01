@@ -1,0 +1,215 @@
+import turtle
+t = turtle.Turtle()
+turtle.Screen().bgcolor("black")
+t.color("white")
+t.speed(0)
+t.hideturtle()
+
+L = 50
+
+def M():
+    global L
+    t.pendown()
+    t.setheading(90)
+    t.forward(L)
+    t.right(155)
+    t.forward(L*1.1033779/2)
+    t.left(130)
+    t.forward( L * 1.1033779/2 )
+    t.right(155)
+    t.forward(L)
+
+def O():
+    t.pendown()
+    t.circle(L/2)
+
+def H():
+    global L
+    t.pendown()
+    t.setheading(90)
+    t.forward(L)
+    t.right(180)
+    t.forward(L / 2)
+    t.left(90)
+    t.forward(L / 2)
+    t.left(90)
+    t.forward(L / 2)
+    t.setheading(-90)
+    t.forward(L)
+
+
+def A():
+    global L
+    t.pendown()
+    t.setheading(75)
+    t.forward(L)
+    t.right(150)
+    t.forward(L)
+    t.backward(L / 2)
+    t.right(105)
+    t.forward(3*L / 10)
+
+def D():
+    global L
+    t.pendown()
+    t.setheading(90)
+    t.forward(L)
+    t.right(90)
+    t.circle(-L / 2, 180)
+
+
+def Q():
+    global L
+    t.pendown()
+    t.circle( L / 2 )
+    t.penup()
+    t.setheading(-90)
+    t.forward(4*L/10)
+    t.left(50)
+    t.pendown()
+    t.forward(L)
+    ###
+
+def U():
+    global L
+    t.pendown()
+    t.setheading(90)
+    t.forward(L)
+    t.right(180)
+    t.forward(L)
+    t.setheading(0)
+    t.forward(L/2)
+    t.setheading(90)
+    t.forward(L)
+
+def Y():
+    global L
+    t.pendown()
+    t.setheading(90)
+    t.forward(3*L / 5)
+    t.right(45)
+    t.forward(3*L / 5)
+    t.backward(3*L / 5)
+    t.left(90)
+    t.forward(3*L / 5)
+
+def R():
+    global L
+    t.pendown()
+    t.setheading(90)
+    t.forward(L)
+    t.setheading(0)
+    t.circle(-L/4, 180)
+    t.setheading(-45)
+    t.forward(L / 2 * 1.41421356)
+
+
+def I():
+    global L
+    t.pendown()
+    t.setheading(90)
+    t.forward(L)
+    t.right(90)
+    t.forward(2*L/5)
+    t.left( 180 )
+    t.forward( 4*L/5 )
+    t.left( 180 )
+    t.forward( 2*L/5)
+    t.setheading(-90)
+    t.forward(L)
+    t.setheading(180)
+    t.forward(2*L/5)
+    t.setheading(0)
+    t.forward(4*L/5)
+
+def move1():
+    t.setheading(0)
+    t.penup()
+    t.forward(3*L/4)
+    t.pendown()
+
+def move2():
+    t.setheading(0)
+    t.penup()
+    t.forward(2*L/5)
+    t.pendown()
+
+##WRITING
+
+t.penup()
+t.setposition(-300, 200)
+
+##MOHAMMAD
+M()
+move1()
+O()
+move1()
+H()
+move2()
+A()
+t.penup()
+t.setheading(-90)
+t.forward(L/2)
+move1()
+M()
+move2()
+M()
+move2()
+A()
+t.penup()
+t.setheading(-90)
+t.forward(L/2)
+move1()
+D()
+
+###
+
+t.penup()
+t.setposition(-280, 150)
+
+##Quayim
+Q()
+move2()
+U()
+t.penup()
+t.setheading(-90)
+t.forward(L)
+move2()
+A()
+t.penup()
+t.setheading(-90)
+t.forward(L/2)
+move1()
+move2()
+Y()
+t.penup()
+t.sety(95)
+move1()
+t.penup()
+t.forward(40)
+I()
+move2()
+M()
+
+###
+
+t.penup()
+t.setposition(-280, 50)
+
+
+##QADRI
+t.setheading(180)
+Q()
+move2()
+A()
+t.penup()
+t.setheading(-90)
+t.forward(L/2)
+move1()
+D()
+move1()
+R()
+move1()
+I()
+
+turtle.mainloop()
