@@ -1,0 +1,21 @@
+#This code is for Python Sandbox- Turtle mode.
+
+import turtle
+a = turtle.Turtle()
+a.color("red")
+a.shape("turtle")
+turtle.Screen().bgcolor("white")
+
+a.speed(0)
+
+for _ in range(10):
+    a.forward(20)
+    a.circle(80)
+    a.left(36)
+
+a.penup()
+a.setposition (8,-(100))
+
+a.pendown()
+a.circle(130)
+a.hideturtle()
